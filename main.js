@@ -1,27 +1,33 @@
-var resultText = Text ? "Aの処理" : "Bの処理";
+//1,変数の中にtrueまたは、falseが代入された時の処理を作ってください。
+var isTrue = true;
+var resultText = isTrue ? "Aの処理" : "Bの処理";
 console.log(resultText);
-console.log("trueはAの処理です。");
-var resultNum = 5 > 4 ? true : false;
-console.log(resultNum);
-console.log("5は4よりも大きい");
-var resultNum = 4 > 5 ? true : false;
-console.log(resultNum);
-console.log("4は5よりも小さい");
-var resultNum = 5 > 3 ? true : false;
-console.log(resultNum);
-console.log("3は5よりも小さい");
-var resultNum = 3 > 5 ? true : false;
-console.log(resultNum);
-console.log("3は5よりも小さい");
-var resultNum = 15 > 10 ? true : false;
-console.log(resultNum);
-console.log("15は10以上");
-var resultNum = 5 > 10 ? true : false;
-console.log(resultNum);
-console.log("5は10以下");
-var resultText = "boolean" ? true : false;
-console.log(resultText);
-console.log("値が存在する");
-var resultText = "" ? true : false;
-console.log(resultText);
-console.log("値が存在しない");
+console.log(isTrue ? "trueはAの処理です。" : "falseはBの処理です。");
+//2,代入された変数の中が5より大きい時にtrueの処理と、5より小さい時にfalseの処理を作ってください。
+var num = 4;
+if (num < 5) {
+	console.log("falseの処理: " + num + " は5より小さい");
+} else {
+	console.log("trueの処理: " + num + " は5以上");
+}
+//3,代入された変数の中が5より小さい時にtrueの処理と、5より小さい時にfalseの処理を作ってください。
+var num = 4;
+if (num < 5) {
+	console.log("trueの処理: " + num + " は5より小さい");
+} else {
+	console.log("falseの処理: " + num + " は5以上");
+}
+//4,代入された変数の中が10以上の時にtrueの処理と、10以下の時にfalseの処理を作ってください。
+var num = 10;
+if (num >= 10) {
+	console.log("trueの処理: " + num + " は10以上");
+} else {
+	console.log("falseの処理: " + num + " は10以下");
+}
+//5,代入された変数の中に値が存在する場合はtrue、存在しない場合はfalseの処理にしてください。
+var value = "Hello";
+if (value) {
+	console.log("trueの処理: 値が存在します");
+} else {
+	console.log("falseの処理: 値が存在しません");
+}
